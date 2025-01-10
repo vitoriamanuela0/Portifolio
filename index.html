@@ -7,6 +7,7 @@
 	<meta name="description" content="Projeto Portfólio">
 	<meta name="author" content="Generation Brasil">
 	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<link rel="stylesheet" href="./assets/css/style.css"/>
 	<link rel="icon" href="/assets/img/icon.png">
 	<title>Vitória Mnauela</title>
 </head>
@@ -15,7 +16,7 @@
 
 	<header>
 
-		<div id="header_content">
+		<div id="header_content" class="flex">
 
 			<div id="titulo">
 
@@ -39,14 +40,17 @@
 
 	<main>
 
-		<section id="about">
+		<section id="about" class="flex_start">
 
 			<h2>Sobre a Vitória Manuela</h2>
 
-			<div id="conteudo">
+			<div id="conteudo" class="flex">
 
-				<img style="width: 200px" src="./assets/img/imagemdaautora.png"
-					alt="Imagem da autora do conteúdo da página" />
+				<img  
+				    src="./assets/img/imagemdaautora.png"
+					alt="Imagem da autora do conteúdo da página" 
+					
+					class="img_profile"/>
 
 				<article id="sobre_texto">
 					<p>
@@ -61,23 +65,29 @@
 			</div>
 		</section>
 
-		<section id="video">
+		<section id="video" class="flex_start">
 
 			<h2>Uma recomendação para você:</h2>
 
-			<div class="youtube">
-				<iframe width="400" height="220" src="https://www.youtube.com/embed/NLL34-Pvj5w?si=ZeWgHXi04DiZjGvP"
-					title="YouTube video player" frameborder="0"
+			<div id="youtube" class="flex">
+
+				<iframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/NLL34-Pvj5w?si=ZeWgHXi04DiZjGvP"
+					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+					allowfullscreen
+				>
 				</iframe>
+
 			</div>
 
 		</section>
 
 	</main>
 
-	<footer>
+	<footer class="flex">
 		<section id="redes_sociais">
 
 			<a href="https://www.linkedin.com/in/vitoria-manuela/">
@@ -95,8 +105,6 @@
 		<h3>
 			Feito com 🧡 por Vitória Manuela - 2025
 		</h3>
-
-	</footer>
 	</footer>
 </body>
 
